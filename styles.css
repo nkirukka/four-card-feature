@@ -1,128 +1,146 @@
-html {
-  height: 100%;
-}
-body {
-  background-color: rgb(237, 237, 237);
-  min-height: 100vh;
-}
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -57%);
-  display: flex;
-}
-.all-four {
-  width: 300px;
-  height: 250px;
-  border-radius: 40px;
-  box-shadow: 10px 19px 39px -15px rgba(0, 0, 0, 0.7);
-  padding: 10px 17px 0px;
-  background-color: white;
-}
-.all-four:nth-of-type(1) {
-  border-top: 5px solid red;
-  transform: translate(150%, -10%);
-}
-.all-four:nth-of-type(2) {
-  border-top: 5px solid yellow;
-  margin-bottom: 50px;
-  transform: translate(50%, 100%);
-}
-.all-four:nth-of-type(3) {
-  border-top: 5px solid rgb(100, 218, 254);
-  transform: translate(-160%, 50%);
-}
-.all-four:nth-of-type(4) {
-  border-top: 5px solid blue;
-  transform: translate(-40%, 50%);
-}
-.all-four .description {
-  color: rgb(152, 145, 145);
-}
-.all-four .title,
-.header .light {
-  font-size: 22px;
-  margin-bottom: 0px;
-}
-.all-four .icon {
-  width: 70px;
-  height: 70px;
-  position: relative;
-  left: 15em;
-  top: 2em;
-}
-.header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.header .light {
-  font-weight: lighter;
-  padding-top: 8px;
-}
-.header .bold {
-  font-size: 35px;
-  margin: 0px 0px;
-}
-.header .header-description {
-  color: rgb(152, 145, 145);
-}
-footer{
-    transform: translate(0px, 6em);
-    text-align: center;
-    position: relative;
-    top: 587px;
-    padding: 20px;
-    color: rgb(71, 64, 64);
-    background-color: rgb(221, 220, 221);
-}
-footer ul li{
-    list-style: none;
-}
-footer ul li a{
-    text-decoration: none;
-    font-weight: 900;
-    color: rgb(17, 112, 91);
-    cursor: pointer;
+/* Google Font: Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+:root {
+  /* Primary */
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  /* Neutral*/
+  --v-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --v-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --body-font-size: 15px;
+  --font-family: "Poppins", sans-serif;
 }
 
-@media only screen and (max-width: 700px) {
-  body {
-    overflow: auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--v-light-gray);
+  font-family: var(--font-family);
+  font-size: var(--body-font-size);
+  color: var(--grayish-blue);
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5em 1em;
+  text-align: center;
+}
+header h1 {
+  color: var(--v-dark-blue);
+  font-weight: 200;
+  font-size: 1.8rem;
+  margin: 0;
+}
+header div {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--v-dark-blue);
+  margin-bottom: 1em;
+}
+header p {
+  margin: 1em;
+  max-width: 35em;
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2em 4em;
+}
+.card {
+  width: 100%;
+  height: 35vh;
+  padding: 2em 2em 0;
+  margin-bottom: 2em;
+  border-radius: 8px;
+  background-color: var(--white);
+  box-shadow: -3px 13px 16px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: -3px 13px 16px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -3px 13px 16px rgba(0, 0, 0, 0.1);
+}
+.card:nth-child(1) {
+  border-top: 4px solid var(--cyan);
+}
+.card:nth-child(2) {
+  border-top: 4px solid var(--red);
+}
+.card:nth-child(3) {
+  border-top: 4px solid var(--orange);
+}
+.card:nth-child(4) {
+  border-top: 4px solid var(--blue);
+}
+.card-title {
+  color: var(--v-dark-blue);
+  font-weight: 600;
+}
+.card-description {
+  font-size: 0.9rem;
+}
+.card-icon {
+  position: relative;
+  top: 20%;
+  left: 75%;
+}
+footer {
+  background-color: rgb(197, 197, 197);
+  color: #000;
+  padding: 0.7em;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(340, 60%, 57%);
+  text-decoration: none;
+  font-weight: 600;
+}
+@media screen and (min-width: 910px) {
+    header{
+        margin-top: 3em;
+    }
+    header p{
+        margin-top: -1em;
+    }
+  main {
+    flex-direction: row;
+    margin-top: 25em;
   }
-  .header {
-    position: static;
-    padding: 27px 23px 0px 23px
+  .card{
+    width: 100%;
+    max-width: 40vw;
   }
-  .container {
-    margin: 0px 34px;
-    padding: 0px 0 0 1px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 7px;
-    position: absolute;
-    transform: translate(-60%, -50%);
-    top: 100%;
-    left: 50%;
-  }
-  .all-four {
-    margin-bottom: 40px;
-  }
-  .all-four:nth-of-type(1) {
-    transform: unset;
-  }
-  .all-four:nth-of-type(2) {
-    transform: unset;
-  }
-  .all-four:nth-of-type(3) {
-    transform: unset;
-  }
-  .all-four:nth-of-type(4) {
-    transform: unset;
-  }
-  footer{
-    transform: translate(0px, 53em);
-    text-align: center;
+  .card:nth-child(1) {
     position: relative;
+    top: -13em;
+    left: 12em;
+  }
+  .card:nth-child(2) {
+    position: relative;
+    top: -22em;
+    left: 14em;
+  }
+  .card:nth-child(3) {
+    position: relative;
+    top: -2em;
+    left: -11.5em;
+  }
+  .card:nth-child(4) {
+    position: relative;
+    top: -13em;
+    right: 9em;
   }
 }

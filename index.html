@@ -1,55 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Four Card Feature</title>
-    <link rel="stylesheet" href="four-card-feature.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Four card feature section</title>
 </head>
-
 <body>
-    <div class="header">
-        <h1 class="light">Reliable, efficient delivery</h1>
-        <h2 class="bold">Powered by Technology</h2>
-        <p class="header-description">Our Artificial Intellligence powered tools use millions of project data <br>
-            points to ensure that your project is successful
-        </p>
+  
+  <header>
+    <h1>Reliable, efficient delivery</h1>
+    <div class="technology">Powered by Technology</div>
+    <p>  Our Artificial Intelligence powered tools use millions of project data points 
+      to ensure that your project is successful</p>
+  </header>
+  
+  <main>
+    <div class="card">
+      <h2 class="card-title">Supervisor</h2>
+        <p class="card-description">Monitors activity to identify project roadblocks</p>
+        <img src="./images/icon-supervisor.svg" alt="magnifying glass with an eye" class="card-icon">
     </div>
-    <main class="container">
-
-        <div class="all-four">
-            <h3 class="title">Team Builder</h3>
-            <p class="description">Scans our talent network to create the optimal team for your project</p>
-            <img class="icon" src="https://png.pngtree.com/png-vector/20190711/ourlarge/pngtree-creative-team-icon-for-your-project-png-image_1541501.jpg"
-                alt="team builder icon">
-        </div>
-
-        <div class="all-four">
-            <h3 class="title">Karma</h3>
-            <p class="description">Regularly evaluates our talent to ensure integrity, accountability and turnover</p>
-            <img class="icon" src="https://static.thenounproject.com/png/2925006-200.png" alt="karma icon">
-        </div>
-        <div class="all-four">
-            <h3 class="title">Supervisor</h3>
-            <p class="description">Monitor activities to identify project roadblocks, implement solutions to attack them</p>
-            <img class="icon" src="./imgs/sup.png" alt="supervisor icon">
-        </div>
-        <div class="all-four">
-            <h3 class="title">Calculator</h3>
-            <p class="description">Uses data from past projects to provide better delivery estimates</p>
-            <img class="icon" src="./imgs/budget.png" alt="trend icon">
-        </div>
-    </main>
-    <footer>
-        <ul>
-            <li>Challenge from <a href="https://www.frontendmentor.io?ref=challenge" target="_blanks">Frontend
-                    Mentor</a></li>
-            <li>Coded by<a href="https://www.linkedin.com/in/nkiruka-ebele-8b03bb17a" target="_blank"> Nkiruka Ebele</a>
-            </li>
-        </ul>
-    </footer>
+    <div class="card">
+      <h2 class="card-title">Team Builder</h2>
+        <p class="card-description">Scans our talent network to create the optimal team for your project</p>
+        <img src="./images/icon-team-builder.svg" alt="house" class="card-icon">
+    </div>
+    <div class="card">
+      <h2 class="card-title">Karma</h2>
+        <p class="card-description">Regularly evaluates our talent to ensure quality</p>
+        <img src="./images/icon-karma.svg" alt="light bulb" class="card-icon">
+    </div>
+    <div class="card">
+      <h2 class="card-title">Calculator</h2>
+        <p class="card-description">  Uses data from past projects to provide better delivery estimates </p>
+        <img src="./images/icon-calculator.svg" alt="monitor" class="card-icon">
+    </div>
+    
+  </main>
+    
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="linkedin.com/in/nkiruka-ebele-8b03bb17a">Nkiruka Ebele</a>.
+    </p>
+  </footer>
 </body>
-
 </html>
