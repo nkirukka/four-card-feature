@@ -50,7 +50,7 @@ header div {
   margin-bottom: 1em;
 }
 header p {
-  margin: 1em;
+  margin: 0 1em;
   max-width: 35em;
   text-align: center;
 }
@@ -111,9 +111,6 @@ footer {
 @media screen and (min-width: 910px) {
     header{
         margin-top: 3em;
-    }
-    header p{
-        margin-top: -1em;
     }
   main {
     flex-direction: row;
