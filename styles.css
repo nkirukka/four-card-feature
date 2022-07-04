@@ -117,7 +117,7 @@ footer {
   main {
     flex-direction: row;
     max-width: 1369px;
-    margin: 25em -3em 0;
+    margin: 27em 2em 0;
   }
   .card{
     width: 100%;
@@ -132,7 +132,7 @@ footer {
   }
   .card:nth-child(2) {
     position: relative;
-    top: -22em;
+    top: -24em;
     left: 14em;
   }
   .card:nth-child(3) {
