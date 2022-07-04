@@ -117,7 +117,7 @@ footer {
   main {
     flex-direction: row;
     max-width: 1369px;
-    margin: 27em 2em 0;
+    margin: 27em -7em 0;
   }
   .card{
     width: 100%;
