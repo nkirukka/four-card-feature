@@ -17,7 +17,6 @@
   --body-font-size: 15px;
   --font-family: "Poppins", sans-serif;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -90,7 +89,7 @@ main {
 }
 .card-icon {
   position: relative;
-  top: 20%;
+  top: 39%;
   left: 75%;
 }
 footer {
@@ -107,7 +106,7 @@ footer {
   text-decoration: none;
   font-weight: 600;
 }
-@media screen and (min-width: 1398px) {
+@media screen and (min-width: 1439px) {
     body{
         overflow-x: hidden;
     }
@@ -117,32 +116,35 @@ footer {
   main {
     flex-direction: row;
     max-width: 1369px;
-    margin: 27em -7em 0;
+    margin-top: 27em;
+    margin-left: auto;
+    margin-right: auto;
   }
   .card{
     width: 100%;
     min-width: 30%;
     max-width: 10%;
+    max-height: 302px;
     
   }
   .card:nth-child(1) {
     position: relative;
     top: -13em;
-    left: 12em;
+    left: 2em;
   }
   .card:nth-child(2) {
     position: relative;
     top: -24em;
-    left: 14em;
+    left: 5em;
   }
   .card:nth-child(3) {
     position: relative;
     top: -2em;
-    left: -13em;
+    left: -22em;
   }
   .card:nth-child(4) {
     position: relative;
     top: -13em;
-    right: 11em;
+    right: 19em;
   }
 }
