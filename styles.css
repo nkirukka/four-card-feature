@@ -47,10 +47,9 @@ header div {
   font-weight: 600;
   font-size: 1.8rem;
   color: var(--v-dark-blue);
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 }
 header p {
-  margin: 0 1em;
   max-width: 35em;
   text-align: center;
 }
@@ -108,17 +107,23 @@ footer {
   text-decoration: none;
   font-weight: 600;
 }
-@media screen and (min-width: 910px) {
+@media screen and (min-width: 1398px) {
+    body{
+        overflow-x: hidden;
+    }
     header{
         margin-top: 3em;
     }
   main {
     flex-direction: row;
-    margin-top: 25em;
+    max-width: 1369px;
+    margin: 25em -3em 0;
   }
   .card{
     width: 100%;
-    max-width: 40vw;
+    min-width: 30%;
+    max-width: 10%;
+    
   }
   .card:nth-child(1) {
     position: relative;
@@ -133,11 +138,11 @@ footer {
   .card:nth-child(3) {
     position: relative;
     top: -2em;
-    left: -11.5em;
+    left: -13em;
   }
   .card:nth-child(4) {
     position: relative;
     top: -13em;
-    right: 9em;
+    right: 11em;
   }
 }
