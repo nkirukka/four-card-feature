@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsice-fourcard-section-with-html-and-css-Hd79vb1MXT)
 - Live Site URL: [Github Pages](https://nkirukka.github.io/submodules/four-card-feature/)
 
 ## My process
