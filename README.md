@@ -1,6 +1,6 @@
-# Frontend Mentor - Sunnyside agency landing page solution
+# Frontend Mentor - Four card feature solution
 
-This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -26,6 +26,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot/desktop-view.png)
+![](./screenshot/mobile-view.png)
 
 ### Links
 
